@@ -1,10 +1,18 @@
 * {
     box-sizing: border-box;
+    font-family: primary-font, sans-serif;
+    font-size:30px;
+}
+
+@font-face {
+    font-family: primary-font;
+    src:url(./resources/Simple-Farmhouse.ttf)
 }
 
 img {
     width: 30px;
     height: auto;
+    border-radius: 1rem;
 }
 
 img.profile-icon-middle {
@@ -25,17 +33,48 @@ body {
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    padding: 1rem 2rem;
 }
 
 .header-top-row {
     display: grid;
     grid-template-columns: 30px 3fr 1fr 30px 30px auto;
     gap: 1rem;
+    align-items: center;
+}
+
+#input-search {
+    border: none;
+    background-color: rgb(202, 202, 202);
+    border-radius: 1rem;
 }
 
 .header-bottom-row {
     display: grid;
     grid-template-columns: 50px auto auto repeat(3, 80px);
+    align-items: center;
+    gap: 8px;
+}
+
+.small-text {
+    margin: 20px 0 5px 0;
+    font-size: smaller;
+}
+
+button {
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(160, 160, 255);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.large-text {
+    margin: 5px 0 20px 0;
+    font-size: larger;
+
 }
 
 .profile-icon-middle {
@@ -148,7 +187,7 @@ body {
 }
 
 .trending-card {
-    display: grid;
+    display: grid;git
     grid-template-columns: 1fr;
 }
 
