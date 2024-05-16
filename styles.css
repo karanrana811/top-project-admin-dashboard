@@ -169,6 +169,8 @@ h3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    padding: 8px;
 }
 
 .projects {
@@ -177,6 +179,12 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px;
     grid-auto-rows:min-content;
+    gap: 1rem;
+}
+
+.projects > h4 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .projects > h4 {
@@ -186,10 +194,33 @@ h3 {
 .project-card {
     display: grid;
     grid-template-columns: 1fr;
+    border-left: 8px solid orange;
+    border-radius: 8px;
+    gap: 8px;
+    padding: 8px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.project-card > * {
+    margin-left: 10px;
 }
 
 .project-buttons {
     text-align: end;
+}
+
+.project-buttons > * {
+    margin-right: 8px;
+}
+
+.project-head {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-card-content {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .announcements {
