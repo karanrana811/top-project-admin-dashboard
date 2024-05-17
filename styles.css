@@ -227,6 +227,26 @@ h3 {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    gap: 1rem;
+}
+
+.announcements h4 {
+    margin: 0;
+}
+
+.announcements-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:min-content;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.announcements-card * {
+    margin: 0;
 }
 
 .trending {
